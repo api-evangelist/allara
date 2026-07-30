@@ -1,8 +1,25 @@
 aid: allara
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/allara.png
 name: Allara
-description: 'Allara is a company surfaced as a portfolio company of index-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Allara Health is a virtual women''s healthcare platform focused on complex hormonal,
+  metabolic, and gynecological conditions such as PCOS, insulin resistance, endometriosis, thyroid
+  disorders, menopause, and PMDD. Serving more than 85,000 patients across 45 states and D.C., Allara
+  connects members with board-certified OB-GYNs, endocrinologists, women''s health nurse practitioners,
+  and registered dietitians for virtual consultations, advanced hormonal and metabolic lab testing,
+  personalized treatment plans, and ongoing care coordination. The company operates consumer-facing web
+  and patient portal applications; it publishes no public developer API, SDK, or documentation surface
+  at this time. Added to the API Evangelist network as an index-ventures portfolio company.'
 url: https://raw.githubusercontent.com/api-evangelist/allara/refs/heads/main/apis.yml
 x-type: company
 x-source: index-ventures-portfolio
@@ -14,6 +31,12 @@ modified: '2026-07-17'
 tags:
 - Company
 - Healthcare
+- Telehealth
+- Women's Health
+- Hormonal Health
+- Digital Health
+- PCOS
+- Virtual Care
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/allara-domain-security.yml
 - type: Website
-  url: http://allarahealth.com
+  url: https://www.allarahealth.com
+- type: SignUp
+  url: https://www.allarahealth.com/get-ready-to-feel-like-your-best-self
+- type: Login
+  url: https://app.allarahealth.com/login
+- type: Pricing
+  url: https://www.allarahealth.com/insurance-pricing
+- type: Blog
+  url: https://www.allarahealth.com/blog
+- type: PrivacyPolicy
+  url: https://www.allarahealth.com/privacy-policy
+- type: TermsOfService
+  url: https://www.allarahealth.com/terms-conditions
+- type: Support
+  url: https://allarahealth.kustomer.help/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
